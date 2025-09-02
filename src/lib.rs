@@ -3,10 +3,10 @@ use abi_stable::{
     library::RootModule,
     package_version_strings,
     sabi_types::VersionStrings,
-    std_types::{ROption, RString, RVec},
     StableAbi,
 };
 use serde::{Deserialize, Serialize};
+pub use abi_stable::std_types::{ROption, RString, RVec};
 
 #[repr(C)]
 #[derive(StableAbi, Debug)]
