@@ -21,7 +21,7 @@ pub struct Plugin {
 
 /// Info of the plugin. Used for the main UI
 #[repr(C)]
-#[derive(StableAbi, Clone, Debug, Serialize, Deserialize)]
+#[derive(StableAbi, Clone, Debug, PartialEq, Eq, Serialize, Deserialize)]
 pub struct PluginInfo {
     pub name: RString,
     /// The icon name from the icon theme in use
@@ -33,7 +33,7 @@ pub struct PluginInfo {
 /// The `title` and `description` support pango markup when `use_pango` is set to true.
 /// Refer to [Pango Markup](https://docs.gtk.org/Pango/pango_markup.html) for how to use pango markup.
 #[repr(C)]
-#[derive(StableAbi, Clone, Debug, Serialize, Deserialize)]
+#[derive(StableAbi, Clone, Debug, PartialEq, Eq, Serialize, Deserialize)]
 pub struct Match {
     pub title: RString,
     pub description: ROption<RString>,
@@ -47,7 +47,7 @@ pub struct Match {
 
 /// For determining how anyrun should proceed after the plugin has handled a match selection
 #[repr(C)]
-#[derive(StableAbi, Clone, Debug, Serialize, Deserialize)]
+#[derive(StableAbi, Clone, Debug, PartialEq, Eq, Serialize, Deserialize)]
 pub enum HandleResult {
     /// Shut down the program
     Close,
