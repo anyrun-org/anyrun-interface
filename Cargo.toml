@@ -1,12 +1,7 @@
 [package]
 name = "anyrun-interface"
-version = "0.1.0"
+version = "25.9.0"
 edition = "2021"
-description = "The raw interface crate for interaction between Anyrun and the plugins"
-license = "GPLv3"
-homepage = "https://github.com/anyrun-org/interface"
-repository = "https://github.com/anyrun-org/interface"
-readme = "README.md"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
