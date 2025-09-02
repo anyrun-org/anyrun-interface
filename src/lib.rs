@@ -6,6 +6,7 @@ use abi_stable::{
     std_types::{ROption, RString, RVec},
     StableAbi,
 };
+use serde::{Deserialize, Serialize};
 
 #[repr(C)]
 #[derive(StableAbi, Debug)]
