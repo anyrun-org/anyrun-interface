@@ -17,7 +17,7 @@ pub struct Plugin {
 
 /// Info of the plugin. Used for the main UI
 #[repr(C)]
-#[derive(StableAbi, Clone, Debug, PartialEq, Eq, Hash, Serialize, Deserialize)]
+#[derive(StableAbi, Clone, Debug, PartialEq, Eq, Serialize, Deserialize)]
 pub struct PluginInfo {
     pub name: RString,
     /// The icon name from the icon theme in use
