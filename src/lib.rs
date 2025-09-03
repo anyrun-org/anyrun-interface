@@ -1,9 +1,5 @@
 use abi_stable::{
-    declare_root_module_statics,
-    library::RootModule,
-    package_version_strings,
-    sabi_types::VersionStrings,
-    StableAbi,
+    declare_root_module_statics, library::RootModule, package_version_strings, sabi_types::VersionStrings, std_types::{ROption, RString, RVec}, StableAbi
 };
 use serde::{Deserialize, Serialize};
 pub use abi_stable;
